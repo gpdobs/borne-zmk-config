@@ -1,0 +1,11 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/gibbz00
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: borne-keyboard
+      import: app/west.yml
+  self:
+    path: config
