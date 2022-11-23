@@ -79,7 +79,7 @@
 		// Colemak-DH layout
 		default_layer {
 			bindings = <
-				&kp Q &kp Q &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &ring_a
+				&kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &ring_a
 				&kp A &kp R &kp S &kp T &kp G &kp M &kp N &kp E &kp I &kp O
 				&kp Z &kp X &kp C &kp D &kp V &kp K &kp H &diaeresis_a &diaeresis_o &none
 				&mo FUNCTION &mod_alt_tap_dance &mo UTIL_LAYER &lt CALC_LAYER SPACE &kp RSHIFT &sk LEFT_CONTROL
