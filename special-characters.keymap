@@ -1,0 +1,37 @@
+//IMPROVEMENT: move these into a separate compose key folder
+macros {
+	// ö = U+00D6
+	diaeresis_o: diaeresis_o {
+		label = "diaeresis_o";
+		compatible = "zmk,behavior-macro";
+		// Default is 100ms 
+		// https://zmk.dev/docs/behaviors/macros#tap-time
+		tap-ms = <0>;
+		#binding-cells = <0>;
+		bindings =
+			<&macro_tap &kp RA(DOUBLE_QUOTES) &kp O>
+		;
+	};
+
+	// ä = U+00C4
+	diaeresis_a: diaeresis_a {
+		label = "diaeresis_a";
+		compatible = "zmk,behavior-macro";
+		tap-ms = <0>;
+		#binding-cells = <0>;
+		bindings =
+			<&macro_tap &kp RA(DOUBLE_QUOTES) &kp A>
+		;
+	};
+
+	// å = U+00C5
+	ring_a: ring_a {
+		label = "ring_a";
+		compatible = "zmk,behavior-macro";
+		tap-ms = <0>;
+		#binding-cells = <0>;
+		bindings =
+			<&macro_tap &kp RA(ASTERISK) &kp A>
+		;
+	};
+};

@@ -24,45 +24,6 @@
 };
 
 / {
-
-	//IMPROVEMENT: move these into a separate compose key folder
-	macros {
-		// ö = U+00D6
-		diaeresis_o: diaeresis_o {
-			label = "diaeresis_o";
-			compatible = "zmk,behavior-macro";
-			// Default is 100ms 
-			// https://zmk.dev/docs/behaviors/macros#tap-time
-			tap-ms = <0>;
-			#binding-cells = <0>;
-			bindings =
-				<&macro_tap &kp RA(DOUBLE_QUOTES) &kp O>
-			;
-		};
-
-		// ä = U+00C4
-		diaeresis_a: diaeresis_a {
-			label = "diaeresis_a";
-			compatible = "zmk,behavior-macro";
-			tap-ms = <0>;
-			#binding-cells = <0>;
-			bindings =
-				<&macro_tap &kp RA(DOUBLE_QUOTES) &kp A>
-			;
-		};
-
-		// å = U+00C5
-		ring_a: ring_a {
-			label = "ring_a";
-			compatible = "zmk,behavior-macro";
-			tap-ms = <0>;
-			#binding-cells = <0>;
-			bindings =
-				<&macro_tap &kp RA(ASTERISK) &kp A>
-			;
-		};
-	};
-
 	behaviors {
 		t1_ctrl_t2_func_layer: t1_ctrl_t2_func_layer {
 			compatible = "zmk,behavior-tap-dance";
@@ -84,12 +45,11 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-		// Colemak-DH layout
 		default_layer {
 			bindings = <
-				&kp Q &kp W &kp F &kp P &kp B &kp J &kp L &kp U &kp Y &ring_a
-				&kp A &kp R &kp S &kp T &kp G &kp M &kp N &kp E &kp I &kp O
-				&kp Z &kp X &kp C &kp D &kp V &kp K &kp H &diaeresis_a &diaeresis_o &kp SINGLE_QUOTE
+				&kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp U &kp P
+				&kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI_COLON
+				&kp Z &kp X &kp C &kp V &kp B &kp N &kp M &COMMA &DOT &SINGLE_QUOTE
 				&t1_ctrl_t2_func_layer &mt LEFT_GUI ESC &lt UTIL_LAYER SPACE &mo PAD &mod_sticky_tap LSHIFT LALT &kp RIGHT_CONTROL
 			>;
 		};
