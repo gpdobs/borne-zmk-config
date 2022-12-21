@@ -48,7 +48,7 @@
 		default_layer {
 			bindings = <
 				&kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp U &kp P
-				&kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI_COLON
+				&kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMICOLON
 				&kp Z &kp X &kp C &kp V &kp B &kp N &kp M &COMMA &DOT &SINGLE_QUOTE
 				&t1_ctrl_t2_func_layer &mt LEFT_GUI ESC &lt UTIL_LAYER SPACE &mo PAD &mod_sticky_tap LSHIFT LALT &kp RIGHT_CONTROL
 			>;
