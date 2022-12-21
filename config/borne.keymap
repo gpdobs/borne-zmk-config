@@ -107,7 +107,7 @@
 			bindings = <
 				&kp TILDE &kp AT_SIGN &kp HASH &kp DOLLAR &none &none &kp RIGHT_BRACKET &kp LEFT_BRACKET &kp EXCLAMATION &none 
 				&kp SEMICOLON &kp COLON &kp BSPC &kp RET &none &kp LEFT_ARROW &kp DOWN_ARROW &kp UP_ARROW &kp RIGHT_ARROW &kp UNDERSCORE 
-				&none &none &none &kp TAB &none &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END &kp GRAVE
+				&none &none &sk RIGHT_ALT &kp TAB &none &kp HOME &kp PAGE_DOWN &kp PAGE_UP &kp END &kp GRAVE
 				&trans &trans &trans &trans &trans &trans
 			>;
 		};
@@ -115,8 +115,8 @@
 		function_layer {
 			bindings = <
 				&kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
-				&kp F11 &kp F12 &kp DELETE &kp INSERT &none &kp K_PREVIOUS &kp K_VOLUME_DOWN &kp K_VOLUME_UP &kp K_NEXT &kp K_PLAY_PAUSE
-				&out OUT_TOG &bt BT_CLR &sk RIGHT_ALT &kp CAPSLOCK &kp SCROLLLOCK &kp K_MUTE &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &kp K_CONTEXT_MENU &kp PRINTSCREEN 
+				&kp F11 &kp F12 &kp DELETE &kp INSERT &kp CAPSLOCK &kp K_PREVIOUS &kp K_VOLUME_DOWN &kp K_VOLUME_UP &kp K_NEXT &kp K_PLAY_PAUSE
+				&out OUT_TOG &bt BT_CLR &bt BT_PRV &bt BT_NXT &kp SCROLLLOCK &kp K_MUTE &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &kp K_CONTEXT_MENU &kp PRINTSCREEN 
 				&trans &trans &trans &trans &trans &trans
 			>;
 		};
