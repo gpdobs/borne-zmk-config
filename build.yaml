@@ -3,3 +3,5 @@ include:
     shield: "borne_left"
   - board: "borne"
     shield: "borne_right"
+  - board: "borne"
+    sheield: "settings_reset"
